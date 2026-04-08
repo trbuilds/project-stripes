@@ -1,0 +1,104 @@
+[
+  {
+    "id": "grevy-zebra",
+    "slug": "grevy-zebra",
+    "name": "Grévy's Zebra Tee",
+    "category": "Mammal Tees",
+    "price": 849,
+    "currency": "INR",
+    "description": "The Grévy's Zebra is the largest wild equid and one of the most endangered zebra species. Your purchase contributes directly to their conservation.",
+    "impact": "A portion of every sale supports Grévy's Zebra conservation in Kenya.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/grevy-zebra-front.webp",
+      "/images/products/grevy-zebra-back.webp"
+    ],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "amur-leopard",
+    "slug": "amur-leopard",
+    "name": "Amur Leopard Tee",
+    "category": "Mammal Tees",
+    "price": 849,
+    "currency": "INR",
+    "description": "With fewer than 100 individuals left in the wild, the Amur Leopard is the world's rarest big cat. Wear their story.",
+    "impact": "Every purchase contributes to Amur Leopard habitat protection in Russia's Far East.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/amur-leopard-front.webp",
+      "/images/products/amur-leopard-back.webp"
+    ],
+    "inStock": true,
+    "featured": true
+  },
+  {
+    "id": "sumatran-orangutan",
+    "slug": "sumatran-orangutan",
+    "name": "Sumatran Orangutan Tee",
+    "category": "Mammal Tees",
+    "price": 849,
+    "currency": "INR",
+    "description": "Critically endangered due to deforestation and illegal wildlife trade, the Sumatran Orangutan needs our voices.",
+    "impact": "Sales support rainforest conservation efforts in Sumatra, Indonesia.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/sumatran-orangutan-front.webp",
+      "/images/products/sumatran-orangutan-back.webp"
+    ],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "black-rhino",
+    "slug": "black-rhino",
+    "name": "Black Rhino Tee",
+    "category": "Mammal Tees",
+    "price": 849,
+    "currency": "INR",
+    "description": "Critically endangered and heavily poached for their horns, Black Rhinos need every advocate they can get.",
+    "impact": "A percentage of every sale funds anti-poaching patrols across Southern Africa.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/black-rhino-front.webp",
+      "/images/products/black-rhino-back.webp"
+    ],
+    "inStock": true,
+    "featured": false
+  },
+  {
+    "id": "snow-leopard",
+    "slug": "snow-leopard",
+    "name": "Snow Leopard Tee",
+    "category": "Mammal Tees",
+    "price": 849,
+    "currency": "INR",
+    "description": "Elusive and majestic, Snow Leopards roam the high mountains of Central Asia — and they're running out of space.",
+    "impact": "Purchases contribute to Snow Leopard habitat and prey conservation in the Himalayas.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/snow-leopard-front.webp",
+      "/images/products/snow-leopard-back.webp"
+    ],
+    "inStock": false,
+    "featured": false
+  },
+  {
+    "id": "bengal-tiger",
+    "slug": "bengal-tiger",
+    "name": "Bengal Tiger Tee",
+    "category": "Mammal Tees",
+    "price": 849,
+    "currency": "INR",
+    "description": "India's national animal, the Bengal Tiger is endangered with fewer than 3,000 remaining in the wild. Represent the stripes.",
+    "impact": "Every sale supports tiger corridor conservation across India.",
+    "sizes": ["XS", "S", "M", "L", "XL", "XXL"],
+    "images": [
+      "/images/products/bengal-tiger-front.webp",
+      "/images/products/bengal-tiger-back.webp"
+    ],
+    "inStock": true,
+    "featured": true
+  }
+]

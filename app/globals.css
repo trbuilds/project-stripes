@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Custom Properties (mirrors Tailwind tokens for plain CSS use) ── */
+:root {
+  --color-bg-primary:          #111111;
+  --color-bg-section:          #1A1A1A;
+  --color-accent-primary:      #B01131;
+  --color-accent-secondary:    #F47E2F;
+  --color-text-primary:        #FAFAFA;
+  --color-text-secondary:      #CCCCCC;
+  --color-watermark:           #1F1F1F;
+  --color-border:              #2A2A2A;
+}
+
+/* ── Base Resets ── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+}
+
+/* ── Watermark Background ── */
+/* Used on Hero; the SVG encodes '#ForTheFauna' repeated at -30deg, ~7% opacity */
+.watermark-bg {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='380' height='220'%3E%3Ctext x='50%25' y='50%25' font-family='sans-serif' font-size='15' font-weight='300' fill='%23FAFAFA' fill-opacity='0.07' text-anchor='middle' dominant-baseline='middle' transform='rotate(-30 190 110)'%3E%23ForTheFauna%3C/text%3E%3C/svg%3E");
+  background-size: 380px 220px;
+}
+
+/* ── Button Base Styles ── */
+/* Sharp corners are intentional — no border-radius per PRD Section 2.4 */
+.btn-primary {
+  @apply inline-block bg-ps-red text-ps-white font-display font-extrabold
+         text-[13px] tracking-[0.1em] uppercase px-9 py-[15px]
+         border-0 cursor-pointer transition-[filter] duration-200 no-underline;
+}
+.btn-primary:hover {
+  filter: brightness(0.88);
+}
+
+.btn-outline {
+  @apply inline-block bg-transparent text-ps-white font-display font-extrabold
+         text-[13px] tracking-[0.1em] uppercase px-9 py-[14px]
+         border-[1.5px] border-ps-white cursor-pointer
+         transition-colors duration-200 no-underline;
+}
+.btn-outline:hover {
+  @apply bg-white/10;
+}
+
+.btn-white {
+  @apply block w-full bg-ps-white text-ps-black font-display font-extrabold
+         text-[13px] tracking-[0.1em] uppercase px-9 py-[16px]
+         border-0 cursor-pointer transition-[filter] duration-200;
+}
+.btn-white:hover {
+  filter: brightness(0.93);
+}
+
+/* ── Section layout ── */
+.section-container {
+  @apply max-w-content mx-auto w-full;
+}
+
+/* ── Smooth carousel ── */
+.carousel-transition {
+  transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+/* ── Scroll chevron bounce ── */
+@keyframes bounce-y {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(10px); }
+}
+.animate-bounce-y {
+  animation: bounce-y 2.2s ease-in-out infinite;
+}
+
+/* ── Legal pages ── */
+.prose-legal h1 { @apply text-3xl font-extrabold uppercase mb-6 text-ps-black; }
+.prose-legal h2 { @apply text-xl font-bold uppercase mt-10 mb-3 text-ps-black; }
+.prose-legal p  { @apply text-[17px] font-light text-ps-black leading-relaxed mb-4; }
+.prose-legal ul { @apply list-disc pl-6 mb-4; }
+.prose-legal li { @apply text-[17px] font-light text-ps-black leading-relaxed mb-1; }
+.prose-legal a  { @apply text-ps-red underline; }
