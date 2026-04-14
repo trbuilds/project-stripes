@@ -16,7 +16,7 @@ import Image from 'next/image'
 // (insta-1.webp through insta-6.webp).
 
 const INSTAGRAM_URL = 'https://instagram.com/projectstripes'
-const BEHOLD_WIDGET_ID = 'YOUR_BEHOLD_WIDGET_ID' // ← replace this
+const BEHOLD_WIDGET_ID = 'RMUFOkiCdBQonQjmgtl5'
 
 // Static fallback images (manual screenshots from @projectstripes)
 const fallbackImages = [
