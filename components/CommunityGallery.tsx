@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons'
@@ -31,13 +31,25 @@ const galleryImages = [
   { src: '/images/customer images/tria.jpg', alt: 'Tria wearing a Project Stripes tee' },
 ]
 
-// Slides visible per breakpoint (handled via CSS, JS tracks desktop default)
-const SLIDES_VISIBLE = 4 // desktop; override with CSS for tablet/mobile
+function getSlidesVisible() {
+  if (typeof window === 'undefined') return 4
+  if (window.innerWidth < 640) return 1
+  if (window.innerWidth < 1024) return 2
+  return 4
+}
 
 export default function CommunityGallery() {
   const [currentIndex, setCurrentIndex] = useState(0)
+  const [slidesVisible, setSlidesVisible] = useState(4)
   const totalSlides = galleryImages.length
-  const maxIndex = totalSlides - SLIDES_VISIBLE // desktop max
+  const maxIndex = totalSlides - slidesVisible
+
+  useEffect(() => {
+    const update = () => setSlidesVisible(getSlidesVisible())
+    update()
+    window.addEventListener('resize', update)
+    return () => window.removeEventListener('resize', update)
+  }, [])
 
   const handlePrev = () => setCurrentIndex((i) => Math.max(0, i - 1))
   const handleNext = () => setCurrentIndex((i) => Math.min(maxIndex, i + 1))
@@ -62,28 +74,28 @@ export default function CommunityGallery() {
           disabled={currentIndex === 0}
           aria-label="Previous photo"
           className="
-            absolute left-3 top-1/2 -translate-y-1/2 z-10
-            w-12 h-12 flex items-center justify-center
-            bg-black/65 border border-white/15
-            text-ps-white cursor-pointer
+            absolute left-3 top-1/2 -translate-y-1/2 z-20
+            w-16 h-16 flex items-center justify-center
+            bg-white border border-black/10
+            text-black cursor-pointer
             transition-opacity duration-200
             disabled:opacity-30
           "
         >
-          <ChevronLeftIcon className="w-5 h-5" />
+          <ChevronLeftIcon className="w-7 h-7" />
         </button>
 
         {/* Track */}
         <div
           className="flex carousel-transition"
-          style={{ transform: `translateX(-${currentIndex * (100 / SLIDES_VISIBLE)}%)` }}
+          style={{ transform: `translateX(-${currentIndex * (100 / slidesVisible)}%)` }}
           aria-live="polite"
         >
           {galleryImages.map((image, index) => (
             <div
               key={index}
               className="
-                relative shrink-0 aspect-square overflow-hidden
+                relative shrink-0 aspect-[3/4] overflow-hidden
                 w-full
                 sm:w-1/2
                 lg:w-1/4
@@ -115,15 +127,15 @@ export default function CommunityGallery() {
           disabled={currentIndex >= maxIndex}
           aria-label="Next photo"
           className="
-            absolute right-3 top-1/2 -translate-y-1/2 z-10
-            w-12 h-12 flex items-center justify-center
-            bg-black/65 border border-white/15
-            text-ps-white cursor-pointer
+            absolute right-16 top-1/2 -translate-y-1/2 z-20
+            w-16 h-16 flex items-center justify-center
+            bg-white border border-black/10
+            text-black cursor-pointer
             transition-opacity duration-200
             disabled:opacity-30
           "
         >
-          <ChevronRightIcon className="w-5 h-5" />
+          <ChevronRightIcon className="w-7 h-7" />
         </button>
       </div>
 
