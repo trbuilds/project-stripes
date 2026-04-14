@@ -19,30 +19,16 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@/components/icons'
 // Alt text: describe what the photo shows (person + animal/product).
 
 const galleryImages = [
-  {
-    src: '/images/gallery/gallery-1.webp',
-    alt: 'Community member wearing a Project Stripes tiger tee at an outdoor event',
-  },
-  {
-    src: '/images/gallery/gallery-2.webp',
-    alt: 'Friends sporting Project Stripes elephant tees on a nature hike',
-  },
-  {
-    src: '/images/gallery/gallery-3.webp',
-    alt: 'Project Stripes supporter at a wildlife conservation rally',
-  },
-  {
-    src: '/images/gallery/gallery-4.webp',
-    alt: 'Customer showing off their Project Stripes leopard tee',
-  },
-  {
-    src: '/images/gallery/gallery-5.webp',
-    alt: 'Group of Project Stripes community members in matching tees',
-  },
-  {
-    src: '/images/gallery/gallery-6.webp',
-    alt: 'Volunteer wearing Project Stripes tee during a conservation event',
-  },
+  { src: '/images/customer images/Aditya Jha.jpg', alt: 'Aditya Jha wearing a Project Stripes tee' },
+  { src: '/images/customer images/Akash Kedia.jpeg', alt: 'Akash Kedia wearing a Project Stripes tee' },
+  { src: '/images/customer images/Jyoti.png', alt: 'Jyoti wearing a Project Stripes tee' },
+  { src: '/images/customer images/Meghna.jpg', alt: 'Meghna wearing a Project Stripes tee' },
+  { src: '/images/customer images/Padma Puvvala.jpg', alt: 'Padma Puvvala wearing a Project Stripes tee' },
+  { src: '/images/customer images/Siddharth_1 - Copy.jpeg', alt: 'Siddharth wearing a Project Stripes tee' },
+  { src: '/images/customer images/roshni.jpg', alt: 'Roshni wearing a Project Stripes tee' },
+  { src: '/images/customer images/siddhu.jpg', alt: 'Siddhu wearing a Project Stripes tee' },
+  { src: '/images/customer images/sudhansh monica.png', alt: 'Sudhansh and Monica wearing Project Stripes tees' },
+  { src: '/images/customer images/tria.jpg', alt: 'Tria wearing a Project Stripes tee' },
 ]
 
 // Slides visible per breakpoint (handled via CSS, JS tracks desktop default)
@@ -109,23 +95,15 @@ export default function CommunityGallery() {
                 the Image component below will render them.
                 Until then, the placeholder div is shown.
               */}
-              <div className="absolute inset-0 bg-ps-dark flex items-center justify-center group">
-                {/* Swap this div for <Image> once assets are ready */}
-                <p className="font-display font-light text-[10px] tracking-[0.08em] uppercase text-ps-grey opacity-30 text-center px-4">
-                  gallery-{index + 1}.webp
-                </p>
-
-                {/*
-                  WHEN READY — uncomment this and remove the placeholder div above:
-                  <Image
-                    src={image.src}
-                    alt={image.alt}
-                    fill
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                    loading="lazy"
-                  />
-                */}
+              <div className="absolute inset-0 group">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  loading="lazy"
+                />
               </div>
             </div>
           ))}
