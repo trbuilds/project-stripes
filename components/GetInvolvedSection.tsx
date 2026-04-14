@@ -47,28 +47,16 @@ export default function GetInvolvedSection() {
           </div>
 
           {/* Right — Product collage */}
-          {/* Replace the placeholder div below with <Image> once you have the collage asset */}
-          <div className="relative aspect-[4/3] w-full bg-ps-border overflow-hidden">
-            {/*
-              WHEN READY: swap the placeholder div for:
-              <Image
-                src="/images/product-collage.webp"
-                alt="Project Stripes product collage — Mammal Tees collection"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 55vw"
-                loading="lazy"
-              />
-            */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <p className="font-display font-light text-[12px] tracking-[0.1em] uppercase text-ps-grey opacity-40 text-center px-6">
-                Product collage image
-                <br />
-                <span className="text-[10px]">
-                  Place at /public/images/product-collage.webp
-                </span>
-              </p>
-            </div>
+          <div className="w-full">
+            <Image
+              src="/images/Mammals_Showcase.gif"
+              alt="Project Stripes product collage — Mammal Tees collection"
+              width={0}
+              height={0}
+              sizes="(max-width: 768px) 100vw, 55vw"
+              className="w-full h-auto"
+              loading="lazy"
+            />
           </div>
 
         </div>

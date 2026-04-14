@@ -17,23 +17,14 @@ export default function MissionSection() {
       id="about"
       className="relative min-h-[640px] flex items-center px-6 md:px-14 py-32 overflow-hidden bg-[#0C1A0C]"
     >
-      {/*
-        BACKGROUND IMAGE:
-        Add your wildlife/elephant photo to /public/images/mission-bg.webp
-        Recommended: landscape, min 1920×1080px, dark/moody exposure
-        Then uncomment the <Image> block below.
-      */}
-
-      {/*
       <Image
-        src="/images/mission-bg.webp"
+        src="/images/mission_section.jpg"
         alt="African elephant in the wild — Project Stripes mission"
         fill
         className="object-cover object-center"
         sizes="100vw"
         priority
       />
-      */}
 
       {/* Dark gradient overlay — ensures text legibility over photo */}
       <div
