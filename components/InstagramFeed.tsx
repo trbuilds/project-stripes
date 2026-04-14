@@ -29,7 +29,7 @@ const fallbackImages = [
 ]
 
 // Set to true to show fallback grid instead of Behold embed
-const USE_FALLBACK = BEHOLD_WIDGET_ID === 'YOUR_BEHOLD_WIDGET_ID'
+const USE_FALLBACK = false
 
 export default function InstagramFeed() {
   return (
