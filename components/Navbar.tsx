@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { InstagramIcon, VolunteerIcon } from '@/components/icons'
 
 // ── Navbar (PRD Section 5 & 2.4) ──
@@ -18,12 +19,15 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link
-          href="/"
-          className="font-display font-extrabold text-[18px] tracking-[0.08em] uppercase text-ps-white no-underline shrink-0"
-        >
-          Project{' '}
-          <span className="text-ps-red">Stripes</span>
+        <Link href="/" className="shrink-0" aria-label="Project Stripes home">
+          <Image
+            src="/images/logo/PS-logo-04.png"
+            alt="Project Stripes"
+            width={120}
+            height={48}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Nav links — centre */}
