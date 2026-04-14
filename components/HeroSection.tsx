@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { ChevronDownIcon, InstagramIcon, VolunteerIcon } from '@/components/icons'
 
 // ── Hero Section (PRD Section 4.1 — Section 1) ──
@@ -45,10 +46,23 @@ export default function HeroSection() {
       </div>
 
       {/* ── Hero ── */}
-      <section className="relative min-h-[calc(100vh-68px)] bg-ps-black watermark-bg flex flex-col items-center justify-center text-center px-6 md:px-14 py-20 overflow-hidden">
+      <section className="relative min-h-[calc(100vh-68px)] bg-ps-black flex flex-col items-center justify-center text-center px-6 md:px-14 py-20 overflow-hidden">
+
+        {/* Background GIF */}
+        <Image
+          src="/images/ForTheFauna_InfinityBanner.gif"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          priority
+          aria-hidden="true"
+        />
+        {/* Dark overlay for text legibility */}
+        <div className="absolute inset-0 bg-ps-black/35 z-[1]" aria-hidden="true" />
 
         {/* Content */}
-        <div className="relative z-10 max-w-4xl w-full">
+        <div className="relative z-10 max-w-4xl w-full" style={{zIndex: 2}}>
           <h1 className="font-display font-extrabold text-[clamp(44px,6.5vw,80px)] leading-[1.05] uppercase tracking-[-0.01em] mb-12">
             Raising Awareness
             <br />
