@@ -38,7 +38,7 @@ export default function MissionSection() {
 
       {/* Content */}
       <div className="relative z-20 max-w-[580px] w-full">
-        <h2 className="font-display font-extrabold text-[clamp(40px,5vw,68px)] uppercase leading-[1.05] text-ps-white mb-7 tracking-[-0.01em]">
+        <h2 className="font-display font-extrabold text-[clamp(40px,5vw,68px)] leading-[1.05] text-ps-white mb-7 tracking-[-0.01em]">
           Mission
         </h2>
         <p className="font-display font-light text-[17px] text-ps-white/90 leading-[1.85] mb-5">

@@ -21,17 +21,17 @@ export default function HomePage() {
       {/* Section 1 — Hero */}
       <HeroSection />
 
-      {/* Section 2 — Get Involved */}
+      {/* Section 2 — Instagram Feed */}
+      <InstagramFeed />
+
+      {/* Section 3 — Get Involved */}
       <GetInvolvedSection />
 
-      {/* Section 3 — Community Gallery (Carousel) */}
+      {/* Section 4 — Community Gallery (Carousel) */}
       <CommunityGallery />
 
-      {/* Section 4 — Mission / About */}
+      {/* Section 5 — Mission / About */}
       <MissionSection />
-
-      {/* Section 5 — Instagram Feed */}
-      <InstagramFeed />
 
       {/* Section 6 — Contact */}
       <ContactSection />

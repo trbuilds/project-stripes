@@ -63,10 +63,10 @@ export default function HeroSection() {
 
         {/* Content */}
         <div className="relative z-10 max-w-4xl w-full" style={{zIndex: 2}}>
-          <h1 className="font-display font-extrabold text-[clamp(44px,6.5vw,80px)] leading-[1.05] uppercase tracking-[-0.01em] mb-12">
+          <h1 className="font-display font-extrabold text-[clamp(44px,6.5vw,80px)] leading-[1.05] tracking-[-0.01em] mb-12">
             Raising Awareness
             <br />
-            about{' '}
+            About{' '}
             <span className="text-ps-red">Endangered</span>
             <br />
             Animals

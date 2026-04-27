@@ -65,7 +65,7 @@ export default function ContactSection() {
             <p className="font-display font-normal text-[11px] tracking-[0.15em] uppercase text-ps-grey mb-3">
               Get in Touch
             </p>
-            <h2 className="font-display font-extrabold text-[clamp(36px,4vw,58px)] leading-[1.05] uppercase text-ps-red mb-9 tracking-[-0.01em]">
+            <h2 className="font-display font-extrabold text-[clamp(36px,4vw,58px)] leading-[1.05] text-ps-red mb-9 tracking-[-0.01em]">
               Contact<br />Us
             </h2>
 

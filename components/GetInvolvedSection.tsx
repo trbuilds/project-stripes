@@ -21,7 +21,7 @@ export default function GetInvolvedSection() {
             <p className="font-display font-normal text-[11px] tracking-[0.15em] uppercase text-ps-grey mb-3">
               Make an Impact
             </p>
-            <h2 className="font-display font-extrabold text-[clamp(36px,4vw,58px)] leading-[1.05] uppercase text-ps-red mb-7 tracking-[-0.01em]">
+            <h2 className="font-display font-extrabold text-[clamp(36px,4vw,58px)] leading-[1.05] text-ps-red mb-7 tracking-[-0.01em]">
               Get<br />Involved!
             </h2>
             <p className="font-display font-light text-[17px] text-ps-grey leading-[1.8] mb-5">

@@ -36,8 +36,8 @@ export default function InstagramFeed() {
     <section className="bg-ps-black py-24 px-6 md:px-14 text-center">
       <div className="section-container">
         {/* Heading */}
-        <h2 className="font-display font-extrabold text-[clamp(32px,4vw,48px)] uppercase tracking-[-0.01em] mb-3">
-          Follow Our Journey
+        <h2 className="font-display font-extrabold text-[clamp(32px,4vw,48px)] tracking-[-0.01em] mb-3">
+          Wild & Fresh From The Field
         </h2>
         <a
           href={INSTAGRAM_URL}
