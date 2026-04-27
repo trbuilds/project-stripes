@@ -25,19 +25,16 @@ export default function GetInvolvedSection() {
               Get<br />Involved!
             </h2>
             <p className="font-display font-light text-[17px] text-ps-grey leading-[1.8] mb-5">
-              Every purchase you make directly contributes to wildlife
-              conservation efforts around the world. We partner with
-              organisations on the ground to protect endangered species
-              and their habitats.
+              Every purchase contributes to creating impactful awareness
+              content and supporting trusted animal welfare organizations,
+              furthering our commitment to the cause.
             </p>
             <p className="font-display font-light text-[17px] text-ps-grey leading-[1.8] mb-5">
-              When you shop with Project Stripes, a portion of every sale
-              goes directly to conservation.{' '}
+              You get a cool T-shirt, and in turn, we get resources to
+              fund our mission.{' '}
               <span className="text-ps-orange font-extrabold">
                 It&apos;s a win-win!
-              </span>{' '}
-              You get premium quality apparel and endangered animals get
-              the support they need to survive.
+              </span>
             </p>
             <div className="mt-9">
               <Link href="/shop" className="btn-outline">
