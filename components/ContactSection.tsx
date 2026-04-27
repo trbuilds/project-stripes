@@ -99,7 +99,7 @@ export default function ContactSection() {
                         bg-ps-black border border-ps-border text-ps-white
                         font-display font-light text-[15px]
                         px-4 py-[13px] outline-none
-                        placeholder:text-ps-border
+                        placeholder:text-ps-grey/50
                         focus:border-ps-grey transition-colors
                       "
                     />
@@ -121,7 +121,7 @@ export default function ContactSection() {
                         bg-ps-black border border-ps-border text-ps-white
                         font-display font-light text-[15px]
                         px-4 py-[13px] outline-none
-                        placeholder:text-ps-border
+                        placeholder:text-ps-grey/50
                         focus:border-ps-grey transition-colors
                       "
                     />
@@ -145,7 +145,7 @@ export default function ContactSection() {
                       bg-ps-black border border-ps-border text-ps-white
                       font-display font-light text-[15px]
                       px-4 py-[13px] outline-none
-                      placeholder:text-ps-border
+                      placeholder:text-ps-grey/50
                       focus:border-ps-grey transition-colors
                     "
                   />
@@ -169,7 +169,7 @@ export default function ContactSection() {
                       bg-ps-black border border-ps-border text-ps-white
                       font-display font-light text-[15px]
                       px-4 py-[13px] outline-none resize-y
-                      placeholder:text-ps-border
+                      placeholder:text-ps-grey/50
                       focus:border-ps-grey transition-colors
                     "
                   />
